@@ -2,3 +2,24 @@
 
 This is the repo for paper: ProjectTest: A Project-level LLM Unit Test Generation Benchmark and Impact of Error Fixing Mechanisms (https://arxiv.org/abs/2502.06556).
 
+## Dataset
+Dataset is in the folder "./dataset".
+
+Dataset statistics:
+
+| Language   | Avg. #Files | Avg. LOC | Avg. #Stars | Avg. #Forks |
+|------------|------------|----------|-------------|-------------|
+| Python     | 6.10       | 654.60   | 5810.30     | 996.90      |
+| Java       | 4.65       | 282.60   | 3306.05     | 1347.65     |
+| JavaScript | 4.00       | 558.05   | 17242.30    | 5476.45     |
+
+
+Detailed information of each project is in Appendix A.
+
+## Preprocessing
+See data_preprocess.ipynb
+
+The processed data is saved in the folder "./ProjectTest"
+
+## Unit Test Generation
+See the folder "./generation".
