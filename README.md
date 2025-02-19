@@ -45,6 +45,12 @@ To generate unit tests for Python/JS/JAVA using LLM self-fixing, run the script 
 
 ## Evaluation
 See the folders "./pytest", "./jstest", "./javatest"
+1. extract the generated tests from the output: data_preprocess.ipynb
+2. move the cleaned tests to the folders: data_preprocess.ipynb
+3. run testing frameworks to get the test results: \
+```sh ./generation/others/run_all.sh```
+
+
 
 ## Citation
 If you find this work useful, please consider citing:\
