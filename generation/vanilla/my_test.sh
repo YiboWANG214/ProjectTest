@@ -5,5 +5,5 @@
 #$ -q long           # Specify queue
 #$ -N  RQ1_SF110_2K_4K
 
-python3 generate_py_tests_gpt.py -t -1 -l Py -d ProjectTest -g O1 -p ./ProjectTest/JS/original_prompt.json
+python3 generate_tests_gpt.py -t -1 -l java -d ProjectTest -g GPT3.5 -p ProjectTest/JAVA/original_prompt.json
 

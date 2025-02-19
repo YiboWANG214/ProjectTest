@@ -14,9 +14,9 @@ from utils import (
 )
 
 # Code Generation Configuration Parameters
-# OPENAI_MODEL = "gpt-3.5-turbo"
+OPENAI_MODEL = "gpt-3.5-turbo"
 # OPENAI_MODEL = "gpt-4-turbo"
-OPENAI_MODEL = "o1"
+# OPENAI_MODEL = "o1"
 OPENAI_TEMPERATURE = 0
 OPENAI_TOP_P = 1
 OPENAI_FREQUENCY_PENALTY = 0
@@ -138,6 +138,7 @@ def generate_tests(
                 print("ERROR", e)
                 mock_response = get_mock_response(prompt, str(e))
                 time.sleep(60)
+            break
 
         json_file.write("]")
 

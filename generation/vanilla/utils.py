@@ -23,7 +23,7 @@ def get_prompts(config: dict, prompt_file: str) -> list:
 
 def get_output_files(config: dict, dataset: str, prompt_file: str, max_tokens: int, model: str, language: str) -> tuple:
     scenario_name = os.path.basename(prompt_file).split("_prompt")[0]
-    output_folder = os.path.join(config["BASE_DIRECTORY"], f"{model}_Data", f"{dataset}{language}_output/")
+    output_folder = os.path.join(config["BASE_DIRECTORY"], f"generated_tests/{model}_Data", f"{dataset}{language}_output/")
     scenario_folder = os.path.join(output_folder, scenario_name)
     json_file = os.path.join(output_folder, f"{scenario_name}_output_{max_tokens}.json")
     csv_file = json_file.replace(".json", ".csv")
@@ -32,7 +32,7 @@ def get_output_files(config: dict, dataset: str, prompt_file: str, max_tokens: i
 
 def get_output_files_initial(config: dict, dataset: str, prompt_file: str, max_tokens: int, model: str, language: str) -> tuple:
     scenario_name = os.path.basename(prompt_file).split("_prompt")[0]
-    output_folder = os.path.join(config["BASE_DIRECTORY"], f"{model}_initial3_Data", f"{dataset}{language}_output/")
+    output_folder = os.path.join(config["BASE_DIRECTORY"], f"generated_tests/{model}_initial3_Data", f"{dataset}{language}_output/")
     scenario_folder = os.path.join(output_folder, scenario_name)
     json_file = os.path.join(output_folder, f"{scenario_name}_output_{max_tokens}.json")
     csv_file = json_file.replace(".json", ".csv")
@@ -40,7 +40,7 @@ def get_output_files_initial(config: dict, dataset: str, prompt_file: str, max_t
 
 def get_output_files_fix(config: dict, dataset: str, prompt_file: str, max_tokens: int, model: str, language: str) -> tuple:
     scenario_name = os.path.basename(prompt_file).split("_prompt")[0]
-    output_folder = os.path.join(config["BASE_DIRECTORY"], f"{model}_fix3_Data", f"{dataset}{language}_output/")
+    output_folder = os.path.join(config["BASE_DIRECTORY"], f"generated_tests/{model}_fix3_Data", f"{dataset}{language}_output/")
     scenario_folder = os.path.join(output_folder, scenario_name)
     json_file = os.path.join(output_folder, f"{scenario_name}_output_{max_tokens}.json")
     csv_file = json_file.replace(".json", ".csv")
@@ -107,7 +107,7 @@ def get_mock_response(prompt: dict, error_msg: str) -> dict:
         test_prompt=prompt["test_prompt"],
         time_taken=-1,  # dummy
     )
- d
+ 
 
 def save_to_dummy_folder(new_code: str, r: dict, suffix: int = 0) -> None:
     filename = r["prompt_id"][1:].replace("/", "_")
