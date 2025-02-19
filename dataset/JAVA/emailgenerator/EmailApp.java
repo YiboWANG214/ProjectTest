@@ -1,4 +1,4 @@
-package projecteval.emailgenerator;
+package projecttest.emailgenerator;
 
 import com.sun.security.jgss.GSSUtil;
 

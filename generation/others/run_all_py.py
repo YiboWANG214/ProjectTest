@@ -85,14 +85,15 @@ def generate_tests(
 ) -> None:
 
     # sets the data output paths
-    original_code_folder = "/home/yibo/Desktop/TestGeneration/ProjectEval/Python"
-    generated_test_folder = f"/home/yibo/Desktop/TestGeneration/PyUnit/{gen_model}_Data_fix3_1/ProjectEvalPy_output/original_fix"
-    output_folder_initial = f"/home/yibo/Desktop/TestGeneration/PyUnit/pytest/{gen_model}_fix3_1/ProjectEval/Python/original_fix"
+    original_code_folder = "./dataset/Python"
+    generated_test_folder = f"./generated_tests/{gen_model}_Data_fix3_1/ProjectTestPy_output/original_fix"
+    output_folder_initial = f"./pytest/{gen_model}_fix3_1/ProjectTest/Python/original_fix"
     # opens output file in write mode (overwrite prior results)
 
     for prompt in prompts:
         print("PROMPT", prompt["id"])
         try:
+            current_path = os.getcwd()
             print("Change current path to: ", os.path.join(output_folder_initial, prompt["classname"]))
             os.chdir(os.path.join(output_folder_initial, prompt["classname"]))
             # run coverage, obtain error messages, cd back
@@ -101,7 +102,7 @@ def generate_tests(
             run_line_coverage_report()
             errors_branch = run_tests_branch_and_collect_errors()
             run_branch_coverage_report()
-            os.chdir("/home/yibo/Desktop/TestGeneration/PyUnit")
+            os.chdir(current_path)
             output_line_filename = os.path.join(os.path.join(output_folder_initial, prompt["classname"]), "test_line_output.txt")
             save_output_to_file(output_line_filename, errors_line)
             output_branch_filename = os.path.join(os.path.join(output_folder_initial, prompt["classname"]), "test_branch_output.txt")
@@ -129,7 +130,7 @@ def main():
         "-d",
         "--dataset",
         type=str,
-        choices=("SF110", "GitHub", "HumanEval", "ClassEval", "ProjectEval"),
+        choices=("SF110", "GitHub", "HumanEval", "ClassEval", "ProjectTest"),
         help="The dataset being used",
         required=True,
     )

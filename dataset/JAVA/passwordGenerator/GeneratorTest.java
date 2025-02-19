@@ -1,4 +1,4 @@
-package projecteval.passwordGenerator;
+package projecttest.passwordGenerator;
 
 import static org.junit.jupiter.api.Assertions.*;
 

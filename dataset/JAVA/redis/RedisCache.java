@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import org.apache.ibatis.cache.Cache;
 import redis.clients.jedis.Jedis;

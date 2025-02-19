@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package projecteval.servlet;
+package projecttest.servlet;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

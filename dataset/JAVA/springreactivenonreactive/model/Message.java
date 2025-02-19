@@ -1,4 +1,4 @@
-package projecteval.springreactivenonreactive.model;
+package projecttest.springreactivenonreactive.model;
 
 import java.util.Date;
 

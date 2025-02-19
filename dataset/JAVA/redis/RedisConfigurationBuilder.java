@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import org.apache.ibatis.cache.CacheException;
 import org.apache.ibatis.io.Resources;

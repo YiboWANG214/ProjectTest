@@ -5,5 +5,5 @@
 #$ -q long           # Specify queue
 #$ -N  RQ1_SF110_2K_4K
 
-python3 run_all_js.py -l js -d ProjectEval -g O1 -p /home/yibo/Desktop/TestGeneration/PyUnit/ProjectEval/JS/original_prompt.json
+python3 run_all_js.py -l js -d ProjectTest -g O1 -p ./ProjectTest/JS/original_prompt.json
 

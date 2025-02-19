@@ -301,7 +301,7 @@ def generate_tests(
                 full_path = os.path.join(original_code_folder, prompt["classname"])
                 if os.path.exists(os.path.join(output_folder_initial, prompt["classname"])):
                     shutil.rmtree(os.path.join(output_folder_initial, prompt["classname"]))
-                main_path = os.path.join(output_folder_initial, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/main/java/projecteval/{prompt['classname']}")
+                main_path = os.path.join(output_folder_initial, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/main/java/projecttest/{prompt['classname']}")
                 os.makedirs(main_path, exist_ok=True)
                 # print("full path: ", full_path)
                 # print("main path: ", main_path)
@@ -309,7 +309,7 @@ def generate_tests(
                 for file_name in os.listdir(generated_test_folder):
                     if file_name.startswith(prompt["classname"]):
                         source_file = os.path.join(generated_test_folder, file_name)
-                        destination_path = os.path.join(output_folder_initial, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/test/java/projecteval/{prompt['classname']}")
+                        destination_path = os.path.join(output_folder_initial, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/test/java/projecttest/{prompt['classname']}")
                         os.makedirs(destination_path, exist_ok=True)
                         # print("source file", source_file)
                         # print("destination path", destination_path)
@@ -334,11 +334,11 @@ def generate_tests(
                 full_path = os.path.join(original_code_folder, prompt["classname"])
                 if os.path.exists(os.path.join(output_folder_fix, prompt["classname"])):
                     shutil.rmtree(os.path.join(output_folder_fix, prompt["classname"]))
-                main_path = os.path.join(output_folder_fix, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/main/java/projecteval/{prompt['classname']}")
+                main_path = os.path.join(output_folder_fix, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/main/java/projecttest/{prompt['classname']}")
                 os.makedirs(main_path, exist_ok=True)
                 copy_files(full_path, main_path)
                 for i in range(len(fixed_codes)):
-                    destination_path = os.path.join(output_folder_fix, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/test/java/projecteval/{prompt['classname']}")
+                    destination_path = os.path.join(output_folder_fix, f"{convert_and_clean(gen_model)}_{prompt['classname']}/src/test/java/projecttest/{prompt['classname']}")
                     os.makedirs(destination_path, exist_ok=True)
                     # print("destination path", destination_path)
                     split_text_file(fixed_codes[i], "package", destination_path, False, i)

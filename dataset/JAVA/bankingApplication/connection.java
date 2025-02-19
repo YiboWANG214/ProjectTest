@@ -1,4 +1,4 @@
-package projecteval.bankingApplication;
+package projecttest.bankingApplication;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

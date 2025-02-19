@@ -1,4 +1,4 @@
-package projecteval.servlet;
+package projecttest.servlet;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;

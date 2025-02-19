@@ -1,8 +1,8 @@
-package projecteval.springuploads3.service;
+package projecttest.springuploads3.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import projecteval.springuploads3.service.model.DownloadedResource;
+import projecttest.springuploads3.service.model.DownloadedResource;
 
 public interface StorageService {
     

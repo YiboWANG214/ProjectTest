@@ -1,4 +1,4 @@
-package projecteval.springuploads3.service.model;
+package projecttest.springuploads3.service.model;
 
 import lombok.Builder;
 import lombok.Data;

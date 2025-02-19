@@ -1,4 +1,4 @@
-package projecteval.springdatamongowithcluster;
+package projecttest.springdatamongowithcluster;
 
 
 import org.springframework.data.annotation.Id;

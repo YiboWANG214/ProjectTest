@@ -1,4 +1,4 @@
-package projecteval.PongGame;
+package projecttest.PongGame;
 
 public class PongGame {
 

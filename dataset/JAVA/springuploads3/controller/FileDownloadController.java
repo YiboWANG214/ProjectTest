@@ -1,6 +1,6 @@
-package projecteval.springuploads3.controller;
+package projecttest.springuploads3.controller;
 
-import projecteval.springuploads3.service.model.DownloadedResource;
+import projecttest.springuploads3.service.model.DownloadedResource;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import projecteval.springuploads3.service.StorageService;
+import projecttest.springuploads3.service.StorageService;
 import lombok.extern.log4j.Log4j2;
 
 @Controller

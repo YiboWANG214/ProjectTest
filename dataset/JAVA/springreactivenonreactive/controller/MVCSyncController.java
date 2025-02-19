@@ -1,4 +1,4 @@
-package projecteval.springreactivenonreactive.controller;
+package projecttest.springreactivenonreactive.controller;
 
 import javax.validation.Valid;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import projecteval.springreactivenonreactive.model.Message;
-import projecteval.springreactivenonreactive.repository.NonReactiveRepository;
+import projecttest.springreactivenonreactive.model.Message;
+import projecttest.springreactivenonreactive.repository.NonReactiveRepository;
 
 @RestController
 public class MVCSyncController {

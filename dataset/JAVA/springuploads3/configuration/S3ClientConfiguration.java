@@ -1,4 +1,4 @@
-package projecteval.springuploads3.configuration;
+package projecttest.springuploads3.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

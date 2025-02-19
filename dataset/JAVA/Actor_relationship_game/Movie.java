@@ -1,4 +1,4 @@
-package projecteval.Actor_relationship_game;
+package projecttest.Actor_relationship_game;
 
 import java.io.Serializable;
 import java.util.HashSet;

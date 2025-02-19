@@ -1,4 +1,4 @@
-package projecteval.bankingApplication;
+package projecttest.bankingApplication;
 
 import java.io.BufferedReader;
 import java.io.IOException;

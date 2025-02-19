@@ -1,4 +1,4 @@
-package projecteval.emailgenerator;
+package projecttest.emailgenerator;
 
 import java.util.Scanner;
 

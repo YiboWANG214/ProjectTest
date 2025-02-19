@@ -1,4 +1,4 @@
-package projecteval.SimpleChat;
+package projecttest.SimpleChat;
 
 import java.io.*;
 import java.net.*;

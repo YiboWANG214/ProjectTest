@@ -1,4 +1,4 @@
-package projecteval.springuploads3.service;
+package projecttest.springuploads3.service;
 
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -10,7 +10,7 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.S3Object;
 
-import projecteval.springuploads3.service.model.DownloadedResource;
+import projecttest.springuploads3.service.model.DownloadedResource;
 import lombok.SneakyThrows;
 
 @Service

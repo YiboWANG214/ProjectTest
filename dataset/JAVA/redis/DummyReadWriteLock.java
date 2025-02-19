@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;

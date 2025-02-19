@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import redis.clients.jedis.JedisPoolConfig;
 import redis.clients.jedis.Protocol;

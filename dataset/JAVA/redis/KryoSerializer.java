@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 import com.esotericsoftware.kryo.kryo5.Kryo;
 import com.esotericsoftware.kryo.kryo5.io.Input;

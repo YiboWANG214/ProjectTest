@@ -1,4 +1,4 @@
-package projecteval.passwordGenerator;
+package projecttest.passwordGenerator;
 
 public class Password {
     String Value;

@@ -1,4 +1,4 @@
-package projecteval.redis;
+package projecttest.redis;
 
 public interface Serializer {
 

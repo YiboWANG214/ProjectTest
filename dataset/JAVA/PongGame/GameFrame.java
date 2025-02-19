@@ -1,4 +1,4 @@
-package projecteval.PongGame;
+package projecttest.PongGame;
 
 import java.awt.*;
 import javax.swing.*;

@@ -57,9 +57,9 @@ def generate_tests(
 ) -> None:
 
     # sets the data output paths
-    original_code_folder = "/home/yibo/Desktop/TestGeneration/ProjectEval/JAVA"
-    generated_test_folder = f"/home/yibo/Desktop/TestGeneration/PyUnit/{gen_model}_Data/ProjectEvalPy_output/original_fix"
-    output_folder_initial = f"/home/yibo/Desktop/TestGeneration/PyUnit/javatest/{gen_model}1/abcd_without"
+    original_code_folder = "./dataset/JAVA"
+    generated_test_folder = f"./generated_tests/{gen_model}_Data/ProjectTestPy_output/original_fix"
+    output_folder_initial = f"./javatest/{gen_model}1/abcd_without"
     # opens output file in write mode (overwrite prior results)
 
     for prompt in prompts:
@@ -68,12 +68,13 @@ def generate_tests(
             # # print(prompt)
             # if prompt['classname'] != "libraryManagement":
             #     continue
+            current_path = os.getcwd()
             print("Change current path to: ", os.path.join(output_folder_initial, f"claude_{prompt['classname']}"))
             os.chdir(os.path.join(output_folder_initial, f"claude_{prompt['classname']}"))
             # run coverage, obtain error messages, cd back
             print("run coverage")
             errors = run_tests_and_collect_errors()
-            os.chdir("/home/yibo/Desktop/TestGeneration/PyUnit")
+            os.chdir(current_path)
             output_filename = os.path.join(os.path.join(output_folder_initial, f"claude_{prompt['classname']}"), "test_line_output.txt")
             save_output_to_file(output_filename, errors)
 
@@ -99,7 +100,7 @@ def main():
         "-d",
         "--dataset",
         type=str,
-        choices=("SF110", "GitHub", "HumanEval", "ClassEval", "ProjectEval"),
+        choices=("SF110", "GitHub", "HumanEval", "ClassEval", "ProjectTest"),
         help="The dataset being used",
         required=True,
     )
