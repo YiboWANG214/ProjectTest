@@ -45,3 +45,14 @@ To generate unit tests for Python/JS/JAVA using LLM self-fixing, run the script 
 
 ## Evaluation
 See the folders "./pytest", "./jstest", "./javatest"
+
+## Citation
+If you find this work useful, please consider citing:\
+```bibtex
+@article{wang2025projecttest,
+  title={ProjectTest: A Project-level Unit Test Generation Benchmark and Impact of Error Fixing Mechanisms},
+  author={Wang, Yibo and Xia, Congying and Zhao, Wenting and Du, Jiangshu and Miao, Chunyu and Deng, Zhongfen and Yu, Philip S and Xing, Chen},
+  journal={arXiv preprint arXiv:2502.06556},
+  year={2025}
+}
+```
