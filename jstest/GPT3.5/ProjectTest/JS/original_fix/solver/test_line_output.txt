@@ -1,0 +1,156 @@
+
+> test
+> jest --coverage
+
+-----------------------------------------------------------------|---------|----------|---------|---------|-------------------
+File                                                             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-----------------------------------------------------------------|---------|----------|---------|---------|-------------------
+All files                                                        |       0 |        0 |       0 |       0 |                   
+ GPT3.5/ProjectTest/JS/original_fix/aggregate                    |       0 |        0 |       0 |       0 |                   
+  aggregate.js                                                   |       0 |        0 |       0 |       0 | 12-21             
+  descriptors.js                                                 |       0 |      100 |       0 |       0 | 2-4               
+ GPT3.5/ProjectTest/JS/original_fix/animation                    |       0 |        0 |       0 |       0 |                   
+  AnimationAction.js                                             |       0 |        0 |       0 |       0 | 8-693             
+  constants.js                                                   |       0 |      100 |     100 |       0 | 1-211             
+ GPT3.5/ProjectTest/JS/original_fix/check                        |       0 |        0 |       0 |       0 |                   
+  check.js                                                       |       0 |        0 |       0 |       0 | 4-51              
+  subclass.js                                                    |       0 |        0 |       0 |       0 | 20-23             
+ GPT3.5/ProjectTest/JS/original_fix/circle                       |       0 |        0 |       0 |       0 |                   
+  Circle.js                                                      |       0 |        0 |       0 |       0 | 1-147             
+  Shape.js                                                       |       0 |        0 |       0 |       0 | 1-265             
+  Utils.js                                                       |       0 |        0 |       0 |       0 | 3-120             
+  vec2.js                                                        |       0 |        0 |       0 |       0 | 28-530            
+ GPT3.5/ProjectTest/JS/original_fix/ckmeans                      |       0 |        0 |       0 |       0 |                   
+  ckmeans.js                                                     |       0 |        0 |       0 |       0 | 20-281            
+  make_matrix.js                                                 |       0 |      100 |       0 |       0 | 12-20             
+  numeric_sort.js                                                |       0 |      100 |       0 |       0 | 19-25             
+  unique_count_sorted.js                                         |       0 |        0 |       0 |       0 | 16-24             
+ GPT3.5/ProjectTest/JS/original_fix/ckmeans/coverage/lcov-report |       0 |        0 |       0 |       0 |                   
+  block-navigation.js                                            |       0 |        0 |       0 |       0 | 2-87              
+  prettify.js                                                    |       0 |        0 |       0 |       0 | 2                 
+  sorter.js                                                      |       0 |        0 |       0 |       0 | 2-196             
+ GPT3.5/ProjectTest/JS/original_fix/controls                     |       0 |        0 |       0 |       0 |                   
+  Controls.js                                                    |       0 |        0 |       0 |       0 | 7-18              
+  EventDispatcher.js                                             |       0 |        0 |       0 |       0 | 9-78              
+ GPT3.5/ProjectTest/JS/original_fix/convex                       |       0 |        0 |       0 |       0 |                   
+  Convex.js                                                      |       0 |        0 |       0 |       0 | 1-388             
+  Line.js                                                        |       0 |        0 |       0 |       0 | 1-90              
+  Shape.js                                                       |       0 |        0 |       0 |       0 | 1-265             
+  Utils.js                                                       |       0 |        0 |       0 |       0 | 3-120             
+ GPT3.5/ProjectTest/JS/original_fix/convex/math                  |       0 |        0 |       0 |       0 |                   
+  polyk.js                                                       |       0 |        0 |       0 |       0 | 31-477            
+  vec2.js                                                        |       0 |        0 |       0 |       0 | 28-530            
+ GPT3.5/ProjectTest/JS/original_fix/easing                       |       0 |        0 |       0 |       0 |                   
+  BezierEasing.js                                                |       0 |        0 |       0 |       0 | 8-121             
+  Easing.js                                                      |       0 |        0 |       0 |       0 | 14-216            
+ GPT3.5/ProjectTest/JS/original_fix/magnetic                     |       0 |        0 |       0 |       0 |                   
+  BezierEasing.js                                                |       0 |        0 |       0 |       0 | 8-121             
+  Component.js                                                   |       0 |        0 |       0 |       0 | 15-80             
+  Easing.js                                                      |       0 |        0 |       0 |       0 | 14-216            
+  EventEmitter.js                                                |       0 |        0 |       0 |       0 | 12-56             
+  Magnetic.js                                                    |       0 |        0 |       0 |       0 | 13-107            
+  Ticker.js                                                      |       0 |        0 |       0 |       0 | 8-134             
+  Tween.js                                                       |       0 |        0 |       0 |       0 | 9-221             
+ GPT3.5/ProjectTest/JS/original_fix/overlapkeeper                |       0 |        0 |       0 |       0 |                   
+  OverlapKeeper.js                                               |       0 |        0 |       0 |       0 | 1-164             
+  OverlapKeeperRecord.js                                         |       0 |      100 |       0 |       0 | 1-40              
+  OverlapKeeperRecordPool.js                                     |       0 |      100 |       0 |       0 | 1-30              
+  Pool.js                                                        |       0 |        0 |       0 |       0 | 1-60              
+  TupleDictionary.js                                             |       0 |        0 |       0 |       0 | 1-118             
+  Utils.js                                                       |       0 |        0 |       0 |       0 | 3-120             
+ GPT3.5/ProjectTest/JS/original_fix/particle                     |       0 |        0 |       0 |       0 |                   
+  Particle.js                                                    |       0 |        0 |       0 |       0 | 1-42              
+  Shape.js                                                       |       0 |        0 |       0 |       0 | 1-265             
+  Utils.js                                                       |       0 |        0 |       0 |       0 | 3-120             
+  vec2.js                                                        |       0 |        0 |       0 |       0 | 28-530            
+ GPT3.5/ProjectTest/JS/original_fix/pixelrender                  |       0 |        0 |       0 |       0 |                   
+  BaseRenderer.js                                                |       0 |        0 |       0 |       0 | 5-83              
+  DomUtil.js                                                     |       0 |        0 |       0 |       0 | 16-77             
+  ImgUtil.js                                                     |       0 |        0 |       0 |       0 | 4-71              
+  PixelRenderer.js                                               |       0 |        0 |       0 |       0 | 6-72              
+  Pool.js                                                        |       0 |        0 |       0 |       0 | 33-141            
+  Puid.js                                                        |       0 |        0 |       0 |       0 | 1-39              
+  Rectangle.js                                                   |       0 |        0 |       0 |       0 | 3-15              
+  Util.js                                                        |       0 |        0 |       0 |       0 | 14-133            
+  WebGLUtil.js                                                   |       0 |      100 |       0 |       0 | 14-122            
+ GPT3.5/ProjectTest/JS/original_fix/plane                        |       0 |        0 |       0 |       0 |                   
+  Plane.js                                                       |       0 |        0 |       0 |       0 | 1-131             
+  Shape.js                                                       |       0 |        0 |       0 |       0 | 1-265             
+  Utils.js                                                       |       0 |        0 |       0 |       0 | 3-120             
+  vec2.js                                                        |       0 |        0 |       0 |       0 | 28-530            
+ GPT3.5/ProjectTest/JS/original_fix/solver                       |       0 |        0 |       0 |       0 |                   
+  EventEmitter.js                                                |       0 |        0 |       0 |       0 | 1-129             
+  Solver.js                                                      |       0 |        0 |       0 |       0 | 1-111             
+ GPT3.5/ProjectTest/JS/original_fix/span                         |       0 |        0 |       0 |       0 |                   
+  DomUtil.js                                                     |       0 |        0 |       0 |       0 | 16-77             
+  ImgUtil.js                                                     |       0 |        0 |       0 |       0 | 4-71              
+  MathUtil.js                                                    |       0 |        0 |       0 |       0 | 1-41              
+  Span.js                                                        |       0 |        0 |       0 |       0 | 6-67              
+  Util.js                                                        |       0 |        0 |       0 |       0 | 14-133            
+  WebGLUtil.js                                                   |       0 |      100 |       0 |       0 | 14-122            
+ GPT3.5/ProjectTest/JS/original_fix/spherical                    |       0 |        0 |       0 |       0 |                   
+  MathUtils.js                                                   |       0 |        0 |       0 |       0 | 1-310             
+  Spherical.js                                                   |       0 |        0 |       0 |       0 | 13-79             
+ GPT3.5/ProjectTest/JS/original_fix/synergy                      |       0 |        0 |       0 |       0 |                   
+  attribute.js                                                   |       0 |        0 |       0 |       0 | 3-82              
+  context.js                                                     |       0 |        0 |       0 |       0 | 3-55              
+  css.js                                                         |       0 |        0 |       0 |       0 | 2-67              
+  helpers.js                                                     |       0 |        0 |       0 |       0 | 1-153             
+  partial.js                                                     |       0 |        0 |       0 |       0 | 3-7               
+ GPT3.5/ProjectTest/JS/original_fix/t_test                       |       0 |        0 |       0 |       0 |                   
+  mean.js                                                        |       0 |        0 |       0 |       0 | 18-22             
+  standard_deviation.js                                          |       0 |        0 |       0 |       0 | 20-24             
+  sum.js                                                         |       0 |        0 |       0 |       0 | 21-55             
+  sum_nth_power_deviations.js                                    |       0 |        0 |       0 |       0 | 19-38             
+  t_test.js                                                      |       0 |      100 |       0 |       0 | 23-32             
+  variance.js                                                    |       0 |        0 |       0 |       0 | 18-24             
+ GPT3.5/ProjectTest/JS/original_fix/validate                     |       0 |        0 |       0 |       0 |                   
+  map.js                                                         |       0 |      100 |     100 |       0 | 8-11              
+  validate.js                                                    |       0 |        0 |       0 |       0 | 14-21             
+ GPT3.5/ProjectTest/JS/original_fix/zone                         |       0 |        0 |       0 |       0 |                   
+  MathUtil.js                                                    |       0 |        0 |       0 |       0 | 1-41              
+  Vector2D.js                                                    |       0 |        0 |       0 |       0 | 5-158             
+  Zone.js                                                        |       0 |      100 |       0 |       0 | 5-16              
+ coverage/lcov-report                                            |       0 |        0 |       0 |       0 |                   
+  block-navigation.js                                            |       0 |        0 |       0 |       0 | 2-87              
+  prettify.js                                                    |       0 |        0 |       0 |       0 | 2                 
+  sorter.js                                                      |       0 |        0 |       0 |       0 | 2-196             
+-----------------------------------------------------------------|---------|----------|---------|---------|-------------------
+FAIL GPT3.5/ProjectTest/JS/original_fix/ckmeans/ckmeans0.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
+
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
+
+    By default "node_modules" folder is ignored by transformers.
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
+
+    Details:
+
+    /home/yibo/Desktop/TestGeneration/ProjectTest/jstest/GPT3.5/ProjectTest/JS/original_fix/ckmeans/ckmeans0.test.js:3
+    import numericSort from './numeric_sort.js';
+    ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        1.436 s
+Ran all test suites.

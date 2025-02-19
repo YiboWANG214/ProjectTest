@@ -57,9 +57,9 @@ def generate_tests(
 ) -> None:
 
     # sets the data output paths
-    original_code_folder = "./dataset/JAVA"
-    generated_test_folder = f"./generated_tests/{gen_model}_Data/ProjectTestPy_output/original_fix"
-    output_folder_initial = f"./javatest/{gen_model}1/abcd_without"
+    original_code_folder = "../../dataset/JAVA"
+    generated_test_folder = f"../../generated_tests/{gen_model}_Data/ProjectTestPy_output/original_fix"
+    output_folder_initial = f"../../javatest/{gen_model}1/abcd_without"
     # opens output file in write mode (overwrite prior results)
 
     for prompt in prompts:

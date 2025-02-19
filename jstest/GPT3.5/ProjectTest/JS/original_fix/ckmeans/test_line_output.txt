@@ -1,0 +1,32 @@
+
+> test
+> jest --coverage
+
+------------------------|---------|----------|---------|---------|-------------------
+File                    | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------------------|---------|----------|---------|---------|-------------------
+All files               |   97.82 |    91.66 |     100 |   97.64 |                   
+ ckmeans.js             |   97.29 |    90.62 |     100 |   97.14 | 28,244            
+ make_matrix.js         |     100 |      100 |     100 |     100 |                   
+ numeric_sort.js        |     100 |      100 |     100 |     100 |                   
+ unique_count_sorted.js |     100 |      100 |     100 |     100 |                   
+------------------------|---------|----------|---------|---------|-------------------
+PASS ./ckmeans0.test.js
+  numericSort
+    ✓ should sort an array of numbers in ascending order (2 ms)
+    ✓ should not change the original array
+  uniqueCountSorted
+    ✓ should return the count of unique values in a sorted array
+    ✓ should handle arrays with duplicate values
+  makeMatrix
+    ✓ should create a matrix with the specified number of rows and columns
+    ✓ should create a matrix with all elements initialized to 0 (1 ms)
+  ckmeans
+    ✓ should separate input values into clusters based on desired number of clusters (1 ms)
+    ✓ should throw an error if the number of requested clusters is greater than the input size (14 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.713 s
+Ran all test suites.
