@@ -5,7 +5,7 @@
     "package": "original",
     "classname": "emailgenerator",
     "id": "./ProjectTest/JAVA/emailgenerator.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the emailgenerator project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "emailgenerator",
     "suffix": ""
 },
@@ -15,7 +15,7 @@
     "package": "original",
     "classname": "heap",
     "id": "./ProjectTest/JAVA/heap.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the heap project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "heap",
     "suffix": ""
 },
@@ -25,7 +25,7 @@
     "package": "original",
     "classname": "servlet",
     "id": "./ProjectTest/JAVA/servlet.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the servlet project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "servlet",
     "suffix": ""
 },
@@ -35,7 +35,7 @@
     "package": "original",
     "classname": "libraryApp",
     "id": "./ProjectTest/JAVA/libraryApp.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the libraryApp project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "libraryApp",
     "suffix": ""
 },
@@ -45,7 +45,7 @@
     "package": "original",
     "classname": "libraryManagement",
     "id": "./ProjectTest/JAVA/libraryManagement.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the libraryManagement project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "libraryManagement",
     "suffix": ""
 },
@@ -55,7 +55,7 @@
     "package": "original",
     "classname": "SimpleChat",
     "id": "./ProjectTest/JAVA/SimpleChat.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the SimpleChat project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "SimpleChat",
     "suffix": ""
 },
@@ -65,7 +65,7 @@
     "package": "original",
     "classname": "springmicrometerundertow",
     "id": "./ProjectTest/JAVA/springmicrometerundertow.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the springmicrometerundertow project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "springmicrometerundertow",
     "suffix": ""
 },
@@ -75,7 +75,7 @@
     "package": "original",
     "classname": "logrequestresponseundertow",
     "id": "./ProjectTest/JAVA/logrequestresponseundertow.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the logrequestresponseundertow project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "logrequestresponseundertow",
     "suffix": ""
 },
@@ -85,7 +85,7 @@
     "package": "original",
     "classname": "Train",
     "id": "./ProjectTest/JAVA/Train.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the Train project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "Train",
     "suffix": ""
 },
@@ -95,7 +95,7 @@
     "package": "original",
     "classname": "bankingApplication",
     "id": "./ProjectTest/JAVA/bankingApplication.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the bankingApplication project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "bankingApplication",
     "suffix": ""
 },
@@ -105,7 +105,7 @@
     "package": "original",
     "classname": "springuploads3",
     "id": "./ProjectTest/JAVA/springuploads3.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the springuploads3 project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "springuploads3",
     "suffix": ""
 },
@@ -115,7 +115,7 @@
     "package": "original",
     "classname": "CalculatorOOPS",
     "id": "./ProjectTest/JAVA/CalculatorOOPS.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the CalculatorOOPS project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "CalculatorOOPS",
     "suffix": ""
 },
@@ -125,7 +125,7 @@
     "package": "original",
     "classname": "passwordGenerator",
     "id": "./ProjectTest/JAVA/passwordGenerator.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the passwordGenerator project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "passwordGenerator",
     "suffix": ""
 },
@@ -135,7 +135,7 @@
     "package": "original",
     "classname": "springdatamongowithcluster",
     "id": "./ProjectTest/JAVA/springdatamongowithcluster.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the springdatamongowithcluster project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "springdatamongowithcluster",
     "suffix": ""
 },
@@ -145,7 +145,7 @@
     "package": "original",
     "classname": "idcenter",
     "id": "./ProjectTest/JAVA/idcenter.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the idcenter project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "idcenter",
     "suffix": ""
 },
@@ -155,7 +155,7 @@
     "package": "original",
     "classname": "PongGame",
     "id": "./ProjectTest/JAVA/PongGame.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the PongGame project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "PongGame",
     "suffix": ""
 },
@@ -165,7 +165,7 @@
     "package": "original",
     "classname": "Actor_relationship_game",
     "id": "./ProjectTest/JAVA/Actor_relationship_game.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the Actor_relationship_game project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "Actor_relationship_game",
     "suffix": ""
 },
@@ -175,7 +175,7 @@
     "package": "original",
     "classname": "springreactivenonreactive",
     "id": "./ProjectTest/JAVA/springreactivenonreactive.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the springreactivenonreactive project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "springreactivenonreactive",
     "suffix": ""
 },
@@ -185,8 +185,8 @@
     "package": "original",
     "classname": "redis",
     "id": "./ProjectTest/JAVA/redis.java",
-    "test_prompt": "Please generate enough unit test cases for each java file in the {method_signature} project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for each java file in the redis project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "redis",
     "suffix": ""
-}
+},
 ]

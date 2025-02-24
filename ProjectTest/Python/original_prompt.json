@@ -198,5 +198,5 @@
     "test_prompt": "Please generate enough unit test cases for each python file in the svm project. Ensure that the import path is correct, depending on whether the project is structured as a package. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate. \n\n",
     "method_signature": "svm",
     "suffix": ""
-}
+},
 ]

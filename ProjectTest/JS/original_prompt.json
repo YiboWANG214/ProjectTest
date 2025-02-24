@@ -5,7 +5,7 @@
     "package": "original",
     "classname": "ckmeans",
     "id": "./ProjectTest/JS/ckmeans.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in ckmeans project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "ckmeans",
     "suffix": ""
 },
@@ -15,7 +15,7 @@
     "package": "original",
     "classname": "validate",
     "id": "./ProjectTest/JS/validate.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in validate project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "validate",
     "suffix": ""
 },
@@ -25,7 +25,7 @@
     "package": "original",
     "classname": "convex",
     "id": "./ProjectTest/JS/convex.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in convex project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "convex",
     "suffix": ""
 },
@@ -35,7 +35,7 @@
     "package": "original",
     "classname": "spherical",
     "id": "./ProjectTest/JS/spherical.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in spherical project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "spherical",
     "suffix": ""
 },
@@ -45,7 +45,7 @@
     "package": "original",
     "classname": "circle",
     "id": "./ProjectTest/JS/circle.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in circle project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "circle",
     "suffix": ""
 },
@@ -55,7 +55,7 @@
     "package": "original",
     "classname": "pixelrender",
     "id": "./ProjectTest/JS/pixelrender.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in pixelrender project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "pixelrender",
     "suffix": ""
 },
@@ -65,7 +65,7 @@
     "package": "original",
     "classname": "solver",
     "id": "./ProjectTest/JS/solver.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in solver project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "solver",
     "suffix": ""
 },
@@ -75,7 +75,7 @@
     "package": "original",
     "classname": "aggregate",
     "id": "./ProjectTest/JS/aggregate.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in aggregate project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "aggregate",
     "suffix": ""
 },
@@ -85,7 +85,7 @@
     "package": "original",
     "classname": "overlapkeeper",
     "id": "./ProjectTest/JS/overlapkeeper.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in overlapkeeper project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "overlapkeeper",
     "suffix": ""
 },
@@ -95,7 +95,7 @@
     "package": "original",
     "classname": "synergy",
     "id": "./ProjectTest/JS/synergy.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in synergy project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "synergy",
     "suffix": ""
 },
@@ -105,7 +105,7 @@
     "package": "original",
     "classname": "easing",
     "id": "./ProjectTest/JS/easing.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in easing project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "easing",
     "suffix": ""
 },
@@ -115,7 +115,7 @@
     "package": "original",
     "classname": "check",
     "id": "./ProjectTest/JS/check.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in check project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "check",
     "suffix": ""
 },
@@ -125,7 +125,7 @@
     "package": "original",
     "classname": "animation",
     "id": "./ProjectTest/JS/animation.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in animation project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "animation",
     "suffix": ""
 },
@@ -135,7 +135,7 @@
     "package": "original",
     "classname": "controls",
     "id": "./ProjectTest/JS/controls.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in controls project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "controls",
     "suffix": ""
 },
@@ -145,7 +145,7 @@
     "package": "original",
     "classname": "particle",
     "id": "./ProjectTest/JS/particle.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in particle project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "particle",
     "suffix": ""
 },
@@ -155,7 +155,7 @@
     "package": "original",
     "classname": "zone",
     "id": "./ProjectTest/JS/zone.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in zone project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "zone",
     "suffix": ""
 },
@@ -165,7 +165,7 @@
     "package": "original",
     "classname": "magnetic",
     "id": "./ProjectTest/JS/magnetic.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in magnetic project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "magnetic",
     "suffix": ""
 },
@@ -175,7 +175,7 @@
     "package": "original",
     "classname": "plane",
     "id": "./ProjectTest/JS/plane.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in plane project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "plane",
     "suffix": ""
 },
@@ -185,7 +185,7 @@
     "package": "original",
     "classname": "span",
     "id": "./ProjectTest/JS/span.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in span project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "span",
     "suffix": ""
 },
@@ -195,8 +195,8 @@
     "package": "original",
     "classname": "t_test",
     "id": "./ProjectTest/JS/t_test.js",
-    "test_prompt": "Please generate enough unit test cases for every javascript file in {method_signature} project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
+    "test_prompt": "Please generate enough unit test cases for every javascript file in t_test project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "t_test",
     "suffix": ""
-}
+},
 ]
