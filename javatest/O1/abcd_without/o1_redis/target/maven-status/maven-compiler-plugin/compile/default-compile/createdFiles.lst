@@ -1,0 +1,10 @@
+projecteval/redis/DummyReadWriteLock.class
+projecteval/redis/Serializer.class
+projecteval/redis/RedisCallback.class
+projecteval/redis/RedisConfig.class
+projecteval/redis/JDKSerializer.class
+projecteval/redis/KryoSerializer.class
+projecteval/redis/RedisCache.class
+projecteval/redis/DummyReadWriteLock$DummyLock.class
+projecteval/redis/Main.class
+projecteval/redis/RedisConfigurationBuilder.class

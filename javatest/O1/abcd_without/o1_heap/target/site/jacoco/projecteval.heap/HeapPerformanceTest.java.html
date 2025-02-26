@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HeapPerformanceTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1heap</a> &gt; <a href="index.source.html" class="el_package">projecteval.heap</a> &gt; <span class="el_source">HeapPerformanceTest.java</span></div><h1>HeapPerformanceTest.java</h1><pre class="source lang-java linenums">package projecteval.heap;
+
+import java.util.HashMap;
+import java.util.Random;
+import java.util.ArrayList;
+
+public class HeapPerformanceTest {
+
+    private final int numElements;
+
+<span class="fc" id="L11">    public HeapPerformanceTest(int numElements) {</span>
+<span class="fc" id="L12">        this.numElements = numElements;</span>
+<span class="fc" id="L13">    }</span>
+
+    public HashMap&lt;String, Long&gt; test() {
+        // Number of elements to test
+        // Create heaps for insertion and deletion tests
+<span class="fc" id="L18">        FibonacciHeap fibonacciHeap = new FibonacciHeap();</span>
+<span class="fc" id="L19">        LeftistHeap leftistHeap = new LeftistHeap();</span>
+<span class="fc" id="L20">        HashMap&lt;String, Long&gt; ret = new HashMap&lt;&gt;();</span>
+
+        // Insertion test
+<span class="fc" id="L23">        long startTime = System.currentTimeMillis();</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (int i = 0; i &lt; numElements; i++) {</span>
+<span class="fc" id="L25">            fibonacciHeap.insert(new Random().nextInt());</span>
+        }
+<span class="fc" id="L27">        long endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L28">        ret.put(&quot;Fibonacci Heap Insertion Time&quot;, endTime - startTime);</span>
+
+<span class="fc" id="L30">        startTime = System.currentTimeMillis();</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (int i = 0; i &lt; numElements; i++) {</span>
+<span class="fc" id="L32">            leftistHeap.insert(new Random().nextInt());</span>
+        }
+<span class="fc" id="L34">        endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L35">        ret.put(&quot;Leftist Heap Insertion Time&quot;, endTime - startTime);</span>
+
+        // Deletion test
+<span class="fc" id="L38">        startTime = System.currentTimeMillis();</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">        while (!fibonacciHeap.empty()) {</span>
+<span class="fc" id="L40">            fibonacciHeap.deleteMin();</span>
+        }
+<span class="fc" id="L42">        endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L43">        ret.put(&quot;Fibonacci Heap Deletion Time&quot;, endTime - startTime);</span>
+
+<span class="fc" id="L45">        startTime = System.currentTimeMillis();</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        while (!leftistHeap.isEmpty()) {</span>
+<span class="fc" id="L47">            leftistHeap.extract_min();</span>
+        }
+<span class="fc" id="L49">        endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L50">        ret.put(&quot;Leftist Heap Deletion Time&quot;, endTime - startTime);</span>
+
+        // Merge test
+<span class="fc" id="L53">        FibonacciHeap fibonacciHeap1 = new FibonacciHeap();</span>
+<span class="fc" id="L54">        FibonacciHeap fibonacciHeap2 = new FibonacciHeap();</span>
+<span class="fc" id="L55">        LeftistHeap leftistHeap1 = new LeftistHeap();</span>
+<span class="fc" id="L56">        LeftistHeap leftistHeap2 = new LeftistHeap();</span>
+
+        // Populate the heaps for merge test
+<span class="fc bfc" id="L59" title="All 2 branches covered.">        for (int i = 0; i &lt; numElements / 2; i++) {</span>
+<span class="fc" id="L60">            fibonacciHeap1.insert(new Random().nextInt());</span>
+<span class="fc" id="L61">            fibonacciHeap2.insert(new Random().nextInt());</span>
+<span class="fc" id="L62">            leftistHeap1.insert(new Random().nextInt());</span>
+<span class="fc" id="L63">            leftistHeap2.insert(new Random().nextInt());</span>
+        }
+
+        // Merge performance test
+<span class="fc" id="L67">        startTime = System.currentTimeMillis();</span>
+<span class="fc" id="L68">        fibonacciHeap1.meld(fibonacciHeap2);</span>
+<span class="fc" id="L69">        endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L70">        ret.put(&quot;Fibonacci Heap Merge Time&quot;, endTime - startTime);</span>
+
+<span class="fc" id="L72">        startTime = System.currentTimeMillis();</span>
+<span class="fc" id="L73">        leftistHeap1.merge(leftistHeap2);</span>
+<span class="fc" id="L74">        endTime = System.currentTimeMillis();</span>
+<span class="fc" id="L75">        ret.put(&quot;Leftist Heap Merge Time&quot;, endTime - startTime);</span>
+<span class="fc" id="L76">        return ret;</span>
+    }
+
+    public static void main(String[] args){
+<span class="fc" id="L80">        int numElements = Integer.parseInt(args[0]);</span>
+
+<span class="fc" id="L82">        HeapPerformanceTest t = new HeapPerformanceTest(numElements);</span>
+<span class="fc" id="L83">        HashMap&lt;String, Long&gt; ret = t.test();</span>
+<span class="fc bfc" id="L84" title="All 2 branches covered.">        for (String key : ret.keySet()) {</span>
+<span class="fc" id="L85">            System.out.println(key + &quot;: &quot; + ret.get(key) + &quot;ms&quot;);</span>
+<span class="fc" id="L86">        }</span>
+<span class="fc" id="L87">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

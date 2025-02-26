@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>registration.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1servlet</a> &gt; <a href="index.source.html" class="el_package">projecteval.servlet</a> &gt; <span class="el_source">registration.java</span></div><h1>registration.java</h1><pre class="source lang-java linenums">package projecteval.servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+
+<span class="fc" id="L15">public class registration extends HttpServlet {</span>
+	private static final long serialVersionUID = 1L;
+ 
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+<span class="fc" id="L20">		response.setContentType(&quot;text/html&quot;);  </span>
+<span class="fc" id="L21">		PrintWriter out = response.getWriter();</span>
+		
+		
+<span class="fc" id="L24">		String f=request.getParameter(&quot;fname&quot;);</span>
+		
+<span class="fc" id="L26">		String c=request.getParameter(&quot;cardno&quot;);</span>
+<span class="fc" id="L27">		String cn=request.getParameter(&quot;cono&quot;);</span>
+<span class="fc" id="L28">		String ad=request.getParameter(&quot;add&quot;);</span>
+<span class="fc" id="L29">		String dob=request.getParameter(&quot;dob&quot;);</span>
+<span class="fc" id="L30">		String email=request.getParameter(&quot;email&quot;);</span>
+<span class="fc" id="L31">		String pin=request.getParameter(&quot;pin&quot;);</span>
+		try
+		{
+		
+<span class="nc" id="L35">		Class.forName(&quot;com.mysql.jdbc.Driver&quot;);</span>
+<span class="nc" id="L36">		Connection con=(Connection) DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/votingdb&quot;,&quot;Vaishnavi&quot;,&quot;Nelavetla@537&quot;);</span>
+<span class="nc" id="L37">		PreparedStatement ps=con.prepareStatement(&quot;insert into register values(?,?,?,?,?,?,?)&quot;);</span>
+<span class="nc" id="L38">		ps.setString(1,f);</span>
+		
+<span class="nc" id="L40">		ps.setString(2,c);</span>
+<span class="nc" id="L41">		ps.setString(3,cn);</span>
+<span class="nc" id="L42">		ps.setString(4,ad);</span>
+<span class="nc" id="L43">		ps.setString(5,dob);</span>
+<span class="nc" id="L44">		ps.setString(6,email);</span>
+<span class="nc" id="L45">		ps.setString(7,pin);</span>
+<span class="nc" id="L46">		int i=ps.executeUpdate();</span>
+<span class="nc bnc" id="L47" title="All 2 branches missed.">		if(i&gt;0)</span>
+		{
+<span class="nc" id="L49">			out.print(&quot;Successfully your account has been created...PLEASE LOGIN&quot;);</span>
+<span class="nc" id="L50">			 RequestDispatcher rd=request.getRequestDispatcher(&quot;loginpage.html&quot;);  </span>
+<span class="nc" id="L51">		        rd.include(request,response);</span>
+<span class="nc" id="L52">		}</span>
+		else
+		{
+<span class="nc" id="L55">			out.print(&quot;Failed account creation try again&quot;);</span>
+<span class="nc" id="L56">			 RequestDispatcher rd=request.getRequestDispatcher(&quot;registration.html&quot;);  </span>
+<span class="nc" id="L57">		        rd.include(request,response);</span>
+		}
+			
+		}
+<span class="fc" id="L61">		catch (Exception e2) {</span>
+<span class="fc" id="L62">			out.print(&quot;Invalid , Failed account creation try again  &quot;+e2);</span>
+<span class="fc" id="L63">			 RequestDispatcher rd=request.getRequestDispatcher(&quot;registration.html&quot;);  </span>
+<span class="fc" id="L64">		        rd.include(request,response);</span>
+<span class="nc" id="L65">		}</span>
+		
+<span class="fc" id="L67">		out.close();</span>
+	
+<span class="fc" id="L69">}</span>
+	protected void service(HttpServletRequest request, HttpServletResponse   response) throws ServletException, IOException 
+	{
+<span class="nc" id="L72">        doPost(request, response);</span>
+<span class="nc" id="L73">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

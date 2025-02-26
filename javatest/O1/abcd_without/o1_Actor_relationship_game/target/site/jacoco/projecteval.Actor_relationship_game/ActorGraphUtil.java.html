@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ActorGraphUtil.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1Actor_relationship_game</a> &gt; <a href="index.source.html" class="el_package">projecteval.Actor_relationship_game</a> &gt; <span class="el_source">ActorGraphUtil.java</span></div><h1>ActorGraphUtil.java</h1><pre class="source lang-java linenums">package projecteval.Actor_relationship_game;
+
+import java.io.*;
+import java.util.List;
+
+<span class="nc" id="L6">public class ActorGraphUtil {</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L9">        String graphPath = args[0];</span>
+<span class="nc" id="L10">        String filePath = args[1];</span>
+<span class="nc" id="L11">        ActorGraph actorGraph = loadGraph(graphPath);</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">        if (actorGraph != null) {</span>
+<span class="nc" id="L13">            List&lt;String&gt; actorNames = actorGraph.getAllActorNames();</span>
+<span class="nc" id="L14">            writeActorsToFile(actorNames, filePath);</span>
+<span class="nc" id="L15">            System.out.println(&quot;Actors list has been saved to &quot; + filePath);</span>
+<span class="nc" id="L16">        } else {</span>
+<span class="nc" id="L17">            System.out.println(&quot;Failed to load the graph.&quot;);</span>
+        }
+<span class="nc" id="L19">    }</span>
+
+    protected static ActorGraph loadGraph(String graphPath) {
+<span class="nc" id="L22">        try (FileInputStream fileIn = new FileInputStream(graphPath);</span>
+<span class="nc" id="L23">             ObjectInputStream in = new ObjectInputStream(fileIn)) {</span>
+<span class="nc" id="L24">            return (ActorGraph) in.readObject();</span>
+<span class="nc" id="L25">        } catch (Exception e) {</span>
+<span class="nc" id="L26">            e.printStackTrace();</span>
+<span class="nc" id="L27">            return null;</span>
+        }
+    }
+
+    protected static void writeActorsToFile(List&lt;String&gt; actorNames, String fileName) {
+<span class="nc" id="L32">        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {</span>
+<span class="nc bnc" id="L33" title="All 2 branches missed.">            for (String name : actorNames) {</span>
+<span class="nc" id="L34">                writer.write(name);</span>
+<span class="nc" id="L35">                writer.newLine();</span>
+<span class="nc" id="L36">            }</span>
+<span class="nc" id="L37">        } catch (IOException e) {</span>
+<span class="nc" id="L38">            e.printStackTrace();</span>
+<span class="nc" id="L39">        }</span>
+<span class="nc" id="L40">    }</span>
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

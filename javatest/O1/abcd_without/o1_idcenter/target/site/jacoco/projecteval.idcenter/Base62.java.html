@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Base62.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1idcenter</a> &gt; <a href="index.source.html" class="el_package">projecteval.idcenter</a> &gt; <span class="el_source">Base62.java</span></div><h1>Base62.java</h1><pre class="source lang-java linenums">package projecteval.idcenter;
+
+/**
+ * A Base62 method
+ *
+ * @author adyliu (imxylz@gmail.com)
+ * @since 1.0
+ */
+<span class="nc" id="L9">public class Base62 {</span>
+
+    private static final String baseDigits = &quot;0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;
+<span class="fc" id="L12">    private static final int BASE = baseDigits.length();</span>
+<span class="fc" id="L13">    private static final char[] digitsChar = baseDigits.toCharArray();</span>
+    private static final int FAST_SIZE = 'z';
+<span class="fc" id="L15">    private static final int[] digitsIndex = new int[FAST_SIZE + 1];</span>
+
+
+    static {
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        for (int i = 0; i &lt; FAST_SIZE; i++) {</span>
+<span class="fc" id="L20">            digitsIndex[i] = -1;</span>
+        }
+        //
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        for (int i = 0; i &lt; BASE; i++) {</span>
+<span class="fc" id="L24">            digitsIndex[digitsChar[i]] = i;</span>
+        }
+<span class="fc" id="L26">    }</span>
+
+    public static long decode(String s) {
+<span class="fc" id="L29">        long result = 0L;</span>
+<span class="fc" id="L30">        long multiplier = 1;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (int pos = s.length() - 1; pos &gt;= 0; pos--) {</span>
+<span class="fc" id="L32">            int index = getIndex(s, pos);</span>
+<span class="fc" id="L33">            result += index * multiplier;</span>
+<span class="fc" id="L34">            multiplier *= BASE;</span>
+        }
+<span class="fc" id="L36">        return result;</span>
+    }
+
+    public static String encode(long number) {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (number &lt; 0) throw new IllegalArgumentException(&quot;Number(Base62) must be positive: &quot; + number);</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (number == 0) return &quot;0&quot;;</span>
+<span class="fc" id="L42">        StringBuilder buf = new StringBuilder();</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        while (number != 0) {</span>
+<span class="fc" id="L44">            buf.append(digitsChar[(int) (number % BASE)]);</span>
+<span class="fc" id="L45">            number /= BASE;</span>
+        }
+<span class="fc" id="L47">        return buf.reverse().toString();</span>
+    }
+
+    private static int getIndex(String s, int pos) {
+<span class="fc" id="L51">        char c = s.charAt(pos);</span>
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">        if (c &gt; FAST_SIZE) {</span>
+<span class="nc" id="L53">            throw new IllegalArgumentException(&quot;Unknow character for Base62: &quot; + s);</span>
+        }
+<span class="fc" id="L55">        int index = digitsIndex[c];</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">        if (index == -1) {</span>
+<span class="fc" id="L57">            throw new IllegalArgumentException(&quot;Unknow character for Base62: &quot; + s);</span>
+        }
+<span class="fc" id="L59">        return index;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

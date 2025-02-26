@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Modulus,0,26,0,2,0,5,0,3,0,2
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Add,0,31,0,2,0,5,0,3,0,2
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Sub,0,26,0,2,0,5,0,3,0,2
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Multiply,0,31,0,2,0,5,0,3,0,2
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Divide,0,26,0,2,0,5,0,3,0,2
+o1CalculatorOOPS,projecteval.CalculatorOOPS,ReadInput,3,15,0,0,1,5,1,1,1,1
+o1CalculatorOOPS,projecteval.CalculatorOOPS,Calculator,3,99,0,8,1,25,1,7,1,1

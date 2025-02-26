@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>FileDownloadController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1springuploads3</a> &gt; <a href="index.source.html" class="el_package">projecteval.springuploads3.controller</a> &gt; <span class="el_source">FileDownloadController.java</span></div><h1>FileDownloadController.java</h1><pre class="source lang-java linenums">package projecteval.springuploads3.controller;
+
+import projecteval.springuploads3.service.model.DownloadedResource;
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import projecteval.springuploads3.service.StorageService;
+import lombok.extern.log4j.Log4j2;
+
+@Controller
+<span class="fc" id="L16">@Log4j2</span>
+public class FileDownloadController {
+    
+    private final StorageService storageService;
+    
+<span class="fc" id="L21">    public FileDownloadController(StorageService storageService) {</span>
+<span class="fc" id="L22">        this.storageService = storageService;</span>
+<span class="fc" id="L23">    }</span>
+    
+    @GetMapping(&quot;/download&quot;)
+    public ResponseEntity&lt;Resource&gt; download(String id) {
+<span class="fc" id="L27">        DownloadedResource downloadedResource = storageService.download(id);</span>
+        
+<span class="fc" id="L29">        return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, &quot;attachment; filename=&quot; + downloadedResource.getFileName())</span>
+<span class="fc" id="L30">                .contentLength(downloadedResource.getContentLength()).contentType(MediaType.APPLICATION_OCTET_STREAM)</span>
+<span class="fc" id="L31">                .body(new InputStreamResource(downloadedResource.getInputStream()));</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

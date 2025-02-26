@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: projecteval.springreactivenonreactive.NonReactiveRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in projecteval.springreactivenonreactive.NonReactiveRepositoryTest

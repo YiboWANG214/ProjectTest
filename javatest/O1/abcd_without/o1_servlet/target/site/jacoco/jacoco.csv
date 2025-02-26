@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+o1servlet,projecteval.servlet,DBUtilR,18,11,2,0,6,6,2,2,1,2
+o1servlet,projecteval.servlet,loginpage,71,23,2,0,24,7,2,4,1,4
+o1servlet,projecteval.servlet,vote,100,39,4,0,32,13,4,3,2,3
+o1servlet,projecteval.servlet,registration,74,54,2,0,22,16,2,2,1,2
+o1servlet,projecteval.servlet,thankyou,0,4,0,0,0,2,0,2,0,2
+o1servlet,projecteval.servlet,againvote,5,3,0,0,2,1,1,1,1,1

@@ -1,0 +1,37 @@
+-------------------------------------------------------------------------------
+Test set: projecteval.springmicrometerundertow.UndertowMeterBinderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.394 s <<< FAILURE! - in projecteval.springmicrometerundertow.UndertowMeterBinderTest
+projecteval.springmicrometerundertow.UndertowMeterBinderTest.testBind  Time elapsed: 0.231 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.micrometer.core.instrument.MeterRegistry$More.timer(io.micrometer.core.instrument.Meter$Id, Object, java.util.function.ToLongFunction, java.util.function.ToDoubleFunction, java.util.concurrent.TimeUnit)" because the return value of "io.micrometer.core.instrument.MeterRegistry.more()" is null
+	at io.micrometer.core.instrument.FunctionTimer$Builder.register(FunctionTimer.java:151)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bindTimer(UndertowMeterBinder.java:50)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bind(UndertowMeterBinder.java:36)
+	at projecteval.springmicrometerundertow.UndertowMeterBinderTest.testBind(springmicrometerundertow0.java:136)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+projecteval.springmicrometerundertow.UndertowMeterBinderTest.testOnApplicationEventBindToInvoked  Time elapsed: 0.138 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.micrometer.core.instrument.MeterRegistry$More.timer(io.micrometer.core.instrument.Meter$Id, Object, java.util.function.ToLongFunction, java.util.function.ToDoubleFunction, java.util.concurrent.TimeUnit)" because the return value of "io.micrometer.core.instrument.MeterRegistry.more()" is null
+	at io.micrometer.core.instrument.FunctionTimer$Builder.register(FunctionTimer.java:151)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bindTimer(UndertowMeterBinder.java:50)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bind(UndertowMeterBinder.java:36)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bindTo(UndertowMeterBinder.java:32)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.onApplicationEvent(UndertowMeterBinder.java:28)
+	at projecteval.springmicrometerundertow.UndertowMeterBinderTest.testOnApplicationEventBindToInvoked(springmicrometerundertow0.java:120)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+projecteval.springmicrometerundertow.UndertowMeterBinderTest.testBindTo  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "io.micrometer.core.instrument.MeterRegistry$More.timer(io.micrometer.core.instrument.Meter$Id, Object, java.util.function.ToLongFunction, java.util.function.ToDoubleFunction, java.util.concurrent.TimeUnit)" because the return value of "io.micrometer.core.instrument.MeterRegistry.more()" is null
+	at io.micrometer.core.instrument.FunctionTimer$Builder.register(FunctionTimer.java:151)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bindTimer(UndertowMeterBinder.java:50)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bind(UndertowMeterBinder.java:36)
+	at projecteval.springmicrometerundertow.UndertowMeterBinder.bindTo(UndertowMeterBinder.java:32)
+	at projecteval.springmicrometerundertow.UndertowMeterBinderTest.testBindTo(springmicrometerundertow0.java:129)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

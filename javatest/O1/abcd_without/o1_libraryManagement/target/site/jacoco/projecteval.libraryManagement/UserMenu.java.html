@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserMenu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1libraryManagement</a> &gt; <a href="index.source.html" class="el_package">projecteval.libraryManagement</a> &gt; <span class="el_source">UserMenu.java</span></div><h1>UserMenu.java</h1><pre class="source lang-java linenums">package projecteval.libraryManagement;
+
+import java.util.Scanner;
+
+
+/**
+ *
+ * @author testuser
+ */
+<span class="nc" id="L10">public class UserMenu {</span>
+    public static void main(String[] args) {
+<span class="fc" id="L12">        String input=&quot;&quot;;</span>
+<span class="fc" id="L13">        Scanner sc = new Scanner(System.in);</span>
+        
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        while(input != &quot;5&quot;){</span>
+<span class="fc" id="L16">            System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="fc" id="L17">            System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="fc" id="L18">            System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+
+<span class="fc" id="L20">            System.out.println(&quot;Select the following options&quot;);</span>
+<span class="fc" id="L21">            System.out.println(&quot;Enter 1 for adding a book&quot;);</span>
+<span class="fc" id="L22">            System.out.println(&quot;Enter 2 for adding a member&quot;);</span>
+<span class="fc" id="L23">            System.out.println(&quot;Enter 3 for issuing a book &quot;);</span>
+<span class="fc" id="L24">            System.out.println(&quot;Enter 4 for returning  a book &quot;);</span>
+<span class="fc" id="L25">            System.out.println(&quot;Enter 5 to exit&quot;);</span>
+<span class="fc" id="L26">            input = processUserInput(sc.nextLine().toString());</span>
+            
+        }
+<span class="fc" id="L29">    }</span>
+    public static String processUserInput(String in) {
+<span class="fc" id="L31">        String retVal=&quot;5&quot;;</span>
+<span class="pc bpc" id="L32" title="4 of 5 branches missed.">        switch(in){</span>
+            case &quot;1&quot;:
+<span class="nc" id="L34">                System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="nc" id="L35">                System.out.println(&quot;You have selected option 1 to add a book&quot;);</span>
+<span class="nc" id="L36">                AddBookMenu.addBookMenu();</span>
+<span class="nc" id="L37">                return &quot;1&quot;;</span>
+            case &quot;2&quot;:
+<span class="nc" id="L39">                System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="nc" id="L40">                System.out.println(&quot;You have selected option 2 to add a member&quot;);</span>
+<span class="nc" id="L41">                AddMemberMenu.addMemberMenu();</span>
+<span class="nc" id="L42">                return &quot;2&quot;;</span>
+            case &quot;3&quot;:
+<span class="nc" id="L44">                System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="nc" id="L45">                System.out.println(&quot;You have selected option 3 to issue a book&quot;);</span>
+<span class="nc" id="L46">                LibFunctions.callIssueMenu();</span>
+<span class="nc" id="L47">                return &quot;3&quot;;</span>
+            case &quot;4&quot;:
+<span class="nc" id="L49">                System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="nc" id="L50">                System.out.println(&quot;You have selected option 4 to return a book&quot;);</span>
+<span class="nc" id="L51">                LibFunctions.callReturnMenu();</span>
+<span class="nc" id="L52">                return &quot;4&quot;;</span>
+            default:
+<span class="fc" id="L54">                System.out.println(&quot;---------------------------------------------------------&quot;);</span>
+<span class="fc" id="L55">                System.out.println(&quot;Thanks for working on this!!&quot;);</span>
+<span class="fc" id="L56">                return &quot;5&quot;;</span>
+        }
+        
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

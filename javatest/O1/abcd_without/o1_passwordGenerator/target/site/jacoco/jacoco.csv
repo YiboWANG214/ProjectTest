@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+o1passwordGenerator,projecteval.passwordGenerator,Password,2,135,4,36,1,40,4,21,0,5
+o1passwordGenerator,projecteval.passwordGenerator,GeneratorTest,69,0,0,0,15,0,6,0,6,0
+o1passwordGenerator,projecteval.passwordGenerator,Alphabet,0,40,0,8,0,8,0,6,0,2
+o1passwordGenerator,projecteval.passwordGenerator,Main,19,0,0,0,6,0,3,0,3,0
+o1passwordGenerator,projecteval.passwordGenerator,Generator,238,63,29,2,82,12,25,3,9,2

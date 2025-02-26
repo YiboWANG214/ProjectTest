@@ -1,0 +1,275 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36mspringuploads3:o1springuploads3[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding o1springuploads3 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:3.3.2:clean[m [1m(default-clean)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] Deleting /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.8:prepare-agent[m [1m(default-prepare-agent)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] argLine set to -javaagent:/home/yibo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/target/jacoco.exec
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:resources[m [1m(default-resources)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/resources
+[[1;34mINFO[m] skip non existing resourceDirectory /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :source
+[[1;34mINFO[m] Compiling 7 source files with javac [debug release 17] to target/classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.3.1:testResources[m [1m(default-testResources)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] skip non existing resourceDirectory /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module! :dependency
+[[1;34mINFO[m] Compiling 5 source files with javac [debug release 17] to target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:3.0.0:test[m [1m(default-test)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running projecteval.springuploads3.service.[1mS3StorageServiceTest[m
+[[1;34mINFO[m] Running projecteval.springuploads3.service.[1mS3StorageServiceTest$DownloadTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m3[m, [1;31mFailures: [0;1;31m2[m, Errors: 0, Skipped: 0, Time elapsed: 0.113 s[1;31m <<< FAILURE![m - in projecteval.springuploads3.service.[1mS3StorageServiceTest$DownloadTests[m
+[[1;31mERROR[m] projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_CreatesBucketIfNotExist  Time elapsed: 1.063 s  <<< FAILURE!
+org.mockito.exceptions.verification.TooManyActualInvocations: 
+
+amazonS3.createBucket("test-bucket");
+Wanted 1 time:
+-> at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_CreatesBucketIfNotExist(springuploads30.java:55)
+But was 2 times:
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64)
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64)
+
+
+	at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_CreatesBucketIfNotExist(springuploads30.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[[1;31mERROR[m] projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_DoesNotCreateBucketIfExist  Time elapsed: 0.003 s  <<< FAILURE!
+org.mockito.exceptions.verification.NeverWantedButInvoked: 
+
+amazonS3.createBucket("test-bucket");
+Never wanted here:
+-> at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_DoesNotCreateBucketIfExist(springuploads30.java:65)
+But invoked here:
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64) with arguments: [test-bucket]
+
+	at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_DoesNotCreateBucketIfExist(springuploads30.java:65)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[[1;34mINFO[m] Running projecteval.springuploads3.service.[1mS3StorageServiceTest$UploadTests[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, Failures: 0, [1;31mErrors: [0;1;31m1[m, Skipped: 0, Time elapsed: 0.009 s[1;31m <<< FAILURE![m - in projecteval.springuploads3.service.[1mS3StorageServiceTest$UploadTests[m
+[[1;31mERROR[m] projecteval.springuploads3.service.S3StorageServiceTest$UploadTests.testUploadSuccess  Time elapsed: 0.009 s  <<< ERROR!
+org.mockito.exceptions.misusing.UnnecessaryStubbingException: 
+
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at projecteval.springuploads3.service.S3StorageServiceTest$UploadTests.testUploadSuccess(springuploads30.java:79)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.
+	at org.mockito.junit.jupiter.MockitoExtension.afterEach(MockitoExtension.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[[1;34mINFO[m] [1mTests run: [0;1m0[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.222 s - in projecteval.springuploads3.service.[1mS3StorageServiceTest[m
+[[1;34mINFO[m] Running projecteval.springuploads3.controller.[1mFileUploadControllerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in projecteval.springuploads3.controller.[1mFileUploadControllerTest[m
+[[1;34mINFO[m] Running projecteval.springuploads3.controller.[1mFileDownloadControllerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in projecteval.springuploads3.controller.[1mFileDownloadControllerTest[m
+[[1;34mINFO[m] Running projecteval.springuploads3.[1mSpringUploadS3ApplicationTest[m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2025-02-04T18:00:06.635-06:00  INFO 1432405 --- [           main] p.s.SpringUploadS3Application            : Starting SpringUploadS3Application using Java 17.0.13 with PID 1432405 (started by yibo in /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3)
+2025-02-04T18:00:06.637-06:00  INFO 1432405 --- [           main] p.s.SpringUploadS3Application            : No active profile set, falling back to 1 default profile: "default"
+2025-02-04T18:00:07.497-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-04T18:00:07.498-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-02-04T18:00:07.517-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JDBC repository interfaces.
+2025-02-04T18:00:07.525-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-04T18:00:07.526-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-04T18:00:07.531-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2025-02-04T18:00:07.536-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-02-04T18:00:07.536-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-02-04T18:00:07.538-06:00  INFO 1432405 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2025-02-04T18:00:07.585-06:00  INFO 1432405 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2025-02-04T18:00:07.600-06:00  INFO 1432405 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2025-02-04T18:00:07.989-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [integrationManagementConfigurer] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-02-04T18:00:08.000-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [org.springframework.integration.internalMessagingAnnotationPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-02-04T18:00:08.015-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-02-04T18:00:08.028-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-02-04T18:00:08.031-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-02-04T18:00:08.033-06:00  WARN 1432405 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'jdbcConnectionDetails' of type [org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-02-04T18:00:08.034-06:00  WARN 1432405 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2025-02-04T18:00:08.043-06:00  INFO 1432405 --- [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-02-04T18:00:08.056-06:00 ERROR 1432405 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 1.844 s[1;31m <<< FAILURE![m - in projecteval.springuploads3.[1mSpringUploadS3ApplicationTest[m
+[[1;31mERROR[m] projecteval.springuploads3.SpringUploadS3ApplicationTest.testMainMethod  Time elapsed: 1.843 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception thrown: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertDoesNotThrow.createAssertionFailedError(AssertDoesNotThrow.java:84)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:53)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:36)
+	at org.junit.jupiter.api.Assertions.assertDoesNotThrow(Assertions.java:3136)
+	at projecteval.springuploads3.SpringUploadS3ApplicationTest.testMainMethod(springuploads34.java:12)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:277)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:806)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at projecteval.springuploads3.SpringUploadS3Application.main(SpringUploadS3Application.java:10)
+	at projecteval.springuploads3.SpringUploadS3ApplicationTest.lambda$testMainMethod$0(springuploads34.java:13)
+	at org.junit.jupiter.api.AssertDoesNotThrow.assertDoesNotThrow(AssertDoesNotThrow.java:49)
+	... 6 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 36 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 50 more
+Caused by: org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:186)
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 51 more
+
+[[1;34mINFO[m] Running projecteval.springuploads3.configuration.[1mS3ClientConfigurationTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 0.228 s[1;31m <<< FAILURE![m - in projecteval.springuploads3.configuration.[1mS3ClientConfigurationTest[m
+[[1;31mERROR[m] projecteval.springuploads3.configuration.S3ClientConfigurationTest.testAmazonS3BeanCreation  Time elapsed: 0.228 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should not throw exception during bean creation
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:135)
+	at projecteval.springuploads3.configuration.S3ClientConfigurationTest.testAmazonS3BeanCreation(springuploads33.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  SpringUploadS3ApplicationTest.testMainMethod:12 Unexpected exception thrown: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.batch.BatchAutoConfiguration$SpringBootBatchConfiguration': Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class[m
+[[1;31mERROR[m] [1;31m  S3ClientConfigurationTest.testAmazonS3BeanCreation:32 Should not throw exception during bean creation[m
+[[1;31mERROR[m] [1;31m  S3StorageServiceTest.testBucketInitialization_CreatesBucketIfNotExist:55 
+amazonS3.createBucket("test-bucket");
+Wanted 1 time:
+-> at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_CreatesBucketIfNotExist(springuploads30.java:55)
+But was 2 times:
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64)
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64)
+
+[m
+[[1;31mERROR[m] [1;31m  S3StorageServiceTest.testBucketInitialization_DoesNotCreateBucketIfExist:65 
+amazonS3.createBucket("test-bucket");
+Never wanted here:
+-> at projecteval.springuploads3.service.S3StorageServiceTest.testBucketInitialization_DoesNotCreateBucketIfExist(springuploads30.java:65)
+But invoked here:
+-> at projecteval.springuploads3.service.S3StorageService.initializeBucket(S3StorageService.java:64) with arguments: [test-bucket]
+[m
+[[1;31mERROR[m] [1;31mErrors: [m
+[[1;31mERROR[m] [1;31m  S3StorageServiceTest$UploadTests.testUploadSuccess » UnnecessaryStubbing 
+Unnecessary stubbings detected.
+Clean & maintainable test code requires zero unnecessary code.
+Following stubbings are unnecessary (click to navigate to relevant line of code):
+  1. -> at projecteval.springuploads3.service.S3StorageServiceTest$UploadTests.testUploadSuccess(springuploads30.java:79)
+Please remove unnecessary stubbings or use 'lenient' strictness. More info: javadoc for UnnecessaryStubbingException class.[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 8, Failures: 4, Errors: 1, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] There are test failures.
+
+Please refer to /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/target/surefire-reports for the individual test results.
+Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mjacoco-maven-plugin:0.8.8:report[m [1m(default-cli)[m @ [36mo1springuploads3[0;1m ---[m
+[[1;34mINFO[m] Loading execution data file /home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/target/jacoco.exec
+[[1;34mINFO[m] Analyzed bundle 'o1springuploads3' with 7 classes
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  5.860 s
+[[1;34mINFO[m] Finished at: 2025-02-04T18:00:08-06:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

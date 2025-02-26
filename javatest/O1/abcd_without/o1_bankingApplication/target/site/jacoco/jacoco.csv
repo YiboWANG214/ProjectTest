@@ -1,0 +1,4 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+o1bankingApplication,projecteval.bankingApplication,connection,12,14,0,0,4,7,1,1,1,1
+o1bankingApplication,projecteval.bankingApplication,bankManagement,283,31,28,4,94,12,19,3,3,3
+o1bankingApplication,projecteval.bankingApplication,bank,26,84,2,7,11,31,3,4,1,1

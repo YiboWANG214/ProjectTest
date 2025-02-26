@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Alphabet.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1passwordGenerator</a> &gt; <a href="index.source.html" class="el_package">projecteval.passwordGenerator</a> &gt; <span class="el_source">Alphabet.java</span></div><h1>Alphabet.java</h1><pre class="source lang-java linenums">package projecteval.passwordGenerator;
+
+
+public class Alphabet {
+	
+	public static final String UPPERCASE_LETTERS = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;
+	public static final String LOWERCASE_LETTERS = &quot;abcdefghijklmnopqrstuvwxyz&quot;;
+	public static final String NUMBERS = &quot;1234567890&quot;;
+	public static final String SYMBOLS = &quot;!@#$%^&amp;*()-_=+\\/~?&quot;;
+	
+	private final StringBuilder pool;
+
+
+<span class="fc" id="L14">	public Alphabet(boolean uppercaseIncluded, boolean lowercaseIncluded, boolean numbersIncluded, boolean specialCharactersIncluded) {</span>
+		
+<span class="fc" id="L16">		pool = new StringBuilder();</span>
+		
+<span class="fc bfc" id="L18" title="All 2 branches covered.">		if (uppercaseIncluded) pool.append(UPPERCASE_LETTERS);</span>
+		
+<span class="fc bfc" id="L20" title="All 2 branches covered.">		if (lowercaseIncluded) pool.append(LOWERCASE_LETTERS);</span>
+		
+<span class="fc bfc" id="L22" title="All 2 branches covered.">		if (numbersIncluded) pool.append(NUMBERS);</span>
+		
+<span class="fc bfc" id="L24" title="All 2 branches covered.">		if (specialCharactersIncluded) pool.append(SYMBOLS);</span>
+		
+<span class="fc" id="L26">	}</span>
+	
+	public String getAlphabet() {
+<span class="fc" id="L29">		return pool.toString();</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

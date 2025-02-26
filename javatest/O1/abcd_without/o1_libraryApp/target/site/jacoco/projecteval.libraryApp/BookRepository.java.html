@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>BookRepository.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">o1libraryApp</a> &gt; <a href="index.source.html" class="el_package">projecteval.libraryApp</a> &gt; <span class="el_source">BookRepository.java</span></div><h1>BookRepository.java</h1><pre class="source lang-java linenums">package projecteval.libraryApp;
+
+import java.util.ArrayList;
+
+public class BookRepository {
+	
+<span class="fc" id="L7">	private ArrayList&lt;Book&gt; books = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L8">	private int booksFound = 0;</span>
+	
+	//Constructor to initialize books
+<span class="fc" id="L11">	public BookRepository(){</span>
+<span class="fc" id="L12">		books.add(new Book(253910,&quot;Pride and Prejudice C&quot;, &quot;Jane Austen&quot;, &quot;Love&quot;,10,7));</span>
+<span class="fc" id="L13">		books.add(new Book(391520,&quot;Programming in ANSI C&quot;, &quot;E. Balagurusamy&quot;, &quot;Educational&quot;,15,10));</span>
+<span class="fc" id="L14">		books.add(new Book(715332,&quot;Shrimad Bhagavad Gita&quot;, &quot;Krishna Dvaipayana&quot;, &quot;Motivational&quot;,20,18));</span>
+<span class="fc" id="L15">		books.add(new Book(935141,&quot;Java: The Complete Reference&quot;, &quot;Herbert Schildt&quot;, &quot;Educational&quot;,12,9));</span>
+<span class="fc" id="L16">		books.add(new Book(459901,&quot;It&quot;, &quot;Stephan King&quot;, &quot;Horror&quot;,7,5));</span>
+<span class="fc" id="L17">		books.add(new Book(855141,&quot;Disneyland&quot;, &quot;Mickey &amp; Minnie&quot;, &quot;Love&quot;,10,3));</span>
+<span class="fc" id="L18">	}</span>
+	
+	
+	//Searching books by Title Keyword
+	public void searchByTitle(String title) {
+<span class="fc" id="L23">		booksFound = 0;</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">		for(Book book : books) {</span>
+<span class="fc" id="L25">			String bookTitle = book.getTitle();</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">			if(bookTitle.toLowerCase().contains(title.toLowerCase())) {</span>
+<span class="fc" id="L27">				bookDetails(book);</span>
+<span class="fc" id="L28">				booksFound++;</span>
+			}
+<span class="fc" id="L30">		}</span>
+<span class="pc bpc" id="L31" title="1 of 2 branches missed.">		System.out.printf(&quot;\n%d Book%s Found.\n&quot;,booksFound,booksFound&gt;1?&quot;s&quot;:&quot;&quot;);</span>
+<span class="fc" id="L32">		return;</span>
+	}
+	
+
+	//Searching books by ISBN Number
+	public void searchByISBN(int isbn) {
+<span class="fc" id="L38">		booksFound = 0;</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">		for(Book book : books) {</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">			if(book.getIsbn()==isbn) {</span>
+<span class="fc" id="L41">				bookDetails(book);</span>
+<span class="fc" id="L42">				booksFound++;</span>
+<span class="fc" id="L43">				break;</span>
+			}
+				
+<span class="fc" id="L46">		}</span>
+<span class="pc bpc" id="L47" title="1 of 2 branches missed.">		System.out.printf(&quot;\n%d Book%s Found.\n&quot;,booksFound,booksFound&gt;1?&quot;s&quot;:&quot;&quot;);</span>
+<span class="fc" id="L48">		return;</span>
+	}
+	
+	
+	//Searching books by Genre
+	public boolean searchByGenre(String genre){
+<span class="fc" id="L54">		booksFound = 0;</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">		for(Book book : books) {</span>
+<span class="fc" id="L56">			String bookGenre = book.getGenre();</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">			if(bookGenre.toLowerCase().equals(genre.toLowerCase())) {</span>
+<span class="fc" id="L58">				bookDetails(book);</span>
+<span class="fc" id="L59">				booksFound++;</span>
+			}
+<span class="fc" id="L61">		}</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">		System.out.printf(&quot;\n%d Book%s Found.\n&quot;,booksFound,booksFound&gt;1?&quot;s&quot;:&quot;&quot;);</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">		if(booksFound&gt;0)</span>
+<span class="fc" id="L64">			return true;</span>
+		else 
+<span class="fc" id="L66">			return false;</span>
+			
+	}
+	
+	
+	// Display Book Details
+	public void bookDetails(Book book) {
+<span class="fc" id="L73">		System.out.println(&quot;\n+&gt; Book details: \n&quot;);</span>
+<span class="fc" id="L74">		System.out.println(&quot;\tTitle: &quot;+book.getTitle()+&quot;\n\tAuthor: &quot;+ book.getAuthor()+&quot;\n\tGenre: &quot;+book.getGenre()+&quot;\n\tISBN: &quot;+book.getIsbn()+&quot;\n\tQuantity: &quot;+book.getQuantity()+&quot;\n\tChecked Out: &quot;+String.valueOf(book.getCheckedOut())+&quot;\n\tAvailable: &quot;+String.valueOf(book.getQuantity()-book.getCheckedOut()));</span>
+<span class="fc" id="L75">	}</span>
+	
+	
+	//Searching for ISBN number for checkIn and checkOut
+	public int searchISBN(int isbn) {
+<span class="fc bfc" id="L80" title="All 2 branches covered.">		for(Book book:books)</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">			if(book.getIsbn()==isbn)</span>
+<span class="fc" id="L82">				return 1;</span>
+<span class="fc" id="L83">		return 0;</span>
+	}
+	
+	
+	//withdrawing book
+	public boolean getBook(int isbn) {
+<span class="fc bfc" id="L89" title="All 2 branches covered.">		for(Book book: books) {</span>
+<span class="fc bfc" id="L90" title="All 2 branches covered.">			if(book.getIsbn()==isbn) {</span>
+<span class="pc bpc" id="L91" title="1 of 2 branches missed.">				if((book.getQuantity()-book.getCheckedOut())&gt;0) {</span>
+<span class="fc" id="L92">					book.setCheckedOut(book.getCheckedOut()+1);</span>
+<span class="fc" id="L93">					return true;</span>
+				}
+			}
+<span class="fc" id="L96">		}</span>
+<span class="fc" id="L97">		return false;</span>
+	}
+	
+	
+	//submitting book
+	public boolean submitBook(int isbn) {
+<span class="pc bpc" id="L103" title="1 of 2 branches missed.">		for(Book book: books) {</span>
+<span class="pc bpc" id="L104" title="1 of 2 branches missed.">			if(book.getQuantity()&gt;book.getCheckedIn()) {</span>
+<span class="fc" id="L105">				book.setCheckedOut(book.getCheckedOut()-1);</span>
+<span class="fc" id="L106">				return true;</span>
+			}
+<span class="nc" id="L108">		}</span>
+<span class="nc" id="L109">		return false;</span>
+	}
+	
+	
+	//Showing status of book
+	public void bookStatus(int isbn) {
+<span class="pc bpc" id="L115" title="1 of 2 branches missed.">		for(Book book: books) {</span>
+<span class="pc bpc" id="L116" title="1 of 2 branches missed.">			if(book.getIsbn()==isbn) {</span>
+<span class="fc" id="L117">				bookDetails(book);</span>
+<span class="fc" id="L118">				break;</span>
+			}
+<span class="nc" id="L120">		}</span>
+<span class="fc" id="L121">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

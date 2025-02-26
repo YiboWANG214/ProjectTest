@@ -1,0 +1,9 @@
+projecteval/redis/RedisConfigurationBuilderTest.class
+projecteval/redis/RedisConfigTest.class
+projecteval/redis/MainTest.class
+projecteval/redis/KryoSerializerTest$UnnormalClass.class
+projecteval/redis/JDKSerializerTest$NotSerializableClass.class
+projecteval/redis/JDKSerializerTest.class
+projecteval/redis/DummyReadWriteLockTest.class
+projecteval/redis/RedisCacheTest.class
+projecteval/redis/KryoSerializerTest.class

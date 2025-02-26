@@ -1,0 +1,7 @@
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/SpringUploadS3Application.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/service/S3StorageService.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/controller/FileUploadController.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/service/StorageService.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/service/model/DownloadedResource.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/configuration/S3ClientConfiguration.java
+/home/yibo/Desktop/TestGeneration/PyUnit/javatest/O1/abcd_without/o1_springuploads3/src/main/java/projecteval/springuploads3/controller/FileDownloadController.java
