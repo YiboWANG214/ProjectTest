@@ -169,5 +169,5 @@
     "test_prompt": "Please generate enough unit test cases for each java file in the redis project. Ensure to use mock properly for unit tests. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "redis",
     "suffix": ""
-},
+}
 ]

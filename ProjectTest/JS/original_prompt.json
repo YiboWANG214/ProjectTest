@@ -178,5 +178,5 @@
     "test_prompt": "Please generate enough unit test cases for every javascript file in t_test project. Do not miss any file. Make sure the tests can successfully compile. Make sure the tests have correct results. Try to achieve the highest coverage rate.\n",
     "method_signature": "t_test",
     "suffix": ""
-},
+}
 ]
