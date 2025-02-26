@@ -1,8 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-o1PongGame,projecteval.PongGame,GamePanel,107,271,10,16,18,66,8,14,0,9
-o1PongGame,projecteval.PongGame,Paddle,36,99,10,14,12,29,10,9,0,6
-o1PongGame,projecteval.PongGame,Ball,0,80,0,4,0,22,0,7,0,5
-o1PongGame,projecteval.PongGame,Score,0,67,0,0,0,10,0,2,0,2
-o1PongGame,projecteval.PongGame,GamePanel.AL,0,28,0,0,0,7,0,3,0,3
-o1PongGame,projecteval.PongGame,GameFrame,0,33,0,0,0,11,0,1,0,1
-o1PongGame,projecteval.PongGame,PongGame,3,5,0,0,1,2,1,1,1,1

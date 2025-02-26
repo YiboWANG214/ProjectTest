@@ -1,8 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-o1libraryManagement,projecteval.libraryManagement,Book,0,66,0,0,0,28,0,14,0,14
-o1libraryManagement,projecteval.libraryManagement,LibUtil,46,0,0,0,14,0,2,0,2,0
-o1libraryManagement,projecteval.libraryManagement,Member,4,32,0,0,2,14,1,7,1,7
-o1libraryManagement,projecteval.libraryManagement,AddMemberMenu,80,0,4,0,28,0,5,0,3,0
-o1libraryManagement,projecteval.libraryManagement,AddBookMenu,120,0,4,0,37,0,5,0,3,0
-o1libraryManagement,projecteval.libraryManagement,LibFunctions,216,0,12,0,76,0,11,0,5,0
-o1libraryManagement,projecteval.libraryManagement,UserMenu,39,62,4,3,17,19,5,3,1,2

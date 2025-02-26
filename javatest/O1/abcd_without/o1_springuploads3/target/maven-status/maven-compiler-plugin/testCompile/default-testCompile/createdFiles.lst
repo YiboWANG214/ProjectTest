@@ -1,7 +1,0 @@
-projecteval/springuploads3/service/S3StorageServiceTest$DownloadTests.class
-projecteval/springuploads3/controller/FileUploadControllerTest.class
-projecteval/springuploads3/controller/FileDownloadControllerTest.class
-projecteval/springuploads3/configuration/S3ClientConfigurationTest.class
-projecteval/springuploads3/service/S3StorageServiceTest$UploadTests.class
-projecteval/springuploads3/SpringUploadS3ApplicationTest.class
-projecteval/springuploads3/service/S3StorageServiceTest.class

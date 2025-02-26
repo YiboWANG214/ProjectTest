@@ -1,4 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-o1springmicrometerundertow,projecteval.springmicrometerundertow,SpringMicrometerUndertowApplication,25,12,0,0,2,4,3,4,3,4
-o1springmicrometerundertow,projecteval.springmicrometerundertow,UndertowMeterBinder,95,13,0,0,21,4,10,2,10,2
-o1springmicrometerundertow,projecteval.springmicrometerundertow,UndertowMetricsHandlerWrapper,0,15,0,0,0,4,0,3,0,3

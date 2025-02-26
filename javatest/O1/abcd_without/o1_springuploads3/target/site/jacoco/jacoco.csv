@@ -1,8 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-o1springuploads3,projecteval.springuploads3.service,S3StorageService,3,96,0,2,1,21,0,6,0,5
-o1springuploads3,projecteval.springuploads3.configuration,S3ClientConfiguration,11,11,0,0,1,3,0,2,0,2
-o1springuploads3,projecteval.springuploads3,SpringUploadS3Application,8,0,0,0,3,0,2,0,2,0
-o1springuploads3,projecteval.springuploads3.controller,FileUploadController,0,21,0,0,0,6,0,3,0,3
-o1springuploads3,projecteval.springuploads3.controller,FileDownloadController,0,40,0,0,0,8,0,3,0,3
-o1springuploads3,projecteval.springuploads3.service.model,DownloadedResource.DownloadedResourceBuilder,10,35,0,0,0,1,1,6,1,6
-o1springuploads3,projecteval.springuploads3.service.model,DownloadedResource,180,31,38,0,1,5,27,6,8,6

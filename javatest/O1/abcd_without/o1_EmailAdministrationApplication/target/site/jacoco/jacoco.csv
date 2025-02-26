@@ -1,3 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-o1EmailAdministrationApplication,projecteval.EmailAdministrationApplication,Main,14,17,0,0,4,5,1,1,1,1
-o1EmailAdministrationApplication,projecteval.EmailAdministrationApplication,Email,4,141,0,7,2,38,1,14,1,9
