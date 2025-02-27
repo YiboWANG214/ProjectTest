@@ -16,6 +16,10 @@ Dataset statistics:
 
 Detailed information of each project is in Appendix A.
 
+## Requirements
+Python: numpy, scipy, pytest, coverage, text_unidecode, rlcard, rapidfuzz
+Java: java 17.0.13, maven 3.6.3
+
 ## Preprocessing
 See data_preprocess.ipynb
 
