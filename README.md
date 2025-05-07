@@ -16,6 +16,14 @@ Dataset statistics:
 
 Detailed information of each project is in Appendix A.
 
+The dataset is also available at [HuggingFace](https://huggingface.co/datasets/yibowang214/ProjectTest).
+```
+from datasets import load_dataset
+
+# Login using e.g. `huggingface-cli login` to access this dataset
+ds = load_dataset("yibowang214/ProjectTest")
+```
+
 ## Requirements
 Python: numpy, scipy, pytest, coverage, text_unidecode, rlcard, rapidfuzz \
 Java: java 17.0.13, maven 3.6.3
